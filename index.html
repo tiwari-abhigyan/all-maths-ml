@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math for ML, DS & DL - Visual Guides</title>
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Global Styles */
+        body {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00ccff;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            text-shadow: 0 0 10px rgba(0, 204, 255, 0.5);
+        }
+
+        /* Section Styles */
+        .section {
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .section h2 {
+            color: #ffcc00;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .section h2 i {
+            margin-right: 10px;
+            transition: transform 0.3s;
+        }
+
+        .section h2:hover {
+            color: #ffe066;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        /* List Styles */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        li i {
+            color: #00ccff;
+            margin-right: 10px;
+        }
+
+        a {
+            color: #66ff99;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #99ffcc;
+            text-decoration: underline;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #888;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mathematics for Machine Learning, Data Science & Deep Learning</h1>
+
+    <!-- Linear Algebra Section -->
+    <div class="section">
+        <h2 onclick="toggleSection(this)"><i class="fas fa-vector-square"></i> Linear Algebra</h2>
+        <div class="content">
+            <ul>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces" target="_blank">Vectors and Vector Spaces - Khan Academy</a></li>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://www.3blue1brown.com/lessons/matrix-multiplication" target="_blank">Matrices and Matrix Operations - 3Blue1Brown</a></li>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/index.htm" target="_blank">Systems of Linear Equations - MIT OpenCourseWare</a></li>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://www.3blue1brown.com/lessons/eigenvalues-eigenvectors" target="_blank">Eigenvalues and Eigenvectors - 3Blue1Brown</a></li>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://www.youtube.com/watch?v=8IQvG7hS56U" target="_blank">Singular Value Decomposition (SVD) - StatQuest</a></li>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://www.youtube.com/watch?v=FgakZw6K1GA" target="_blank">Principal Component Analysis (PCA) - StatQuest</a></li>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://nitsan.itch.io/linear-algebra-visualizer" target="_blank">Interactive Linear Algebra Visualizer - Nitsan</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Calculus Section -->
+    <div class="section">
+        <h2 onclick="toggleSection(this)"><i class="fas fa-calculator"></i> Calculus</h2>
+        <div class="content">
+            <ul>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://www.khanacademy.org/math/differential-calculus" target="_blank">Differential Calculus - Khan Academy</a></li>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://www.khanacademy.org/math/integral-calculus" target="_blank">Integral Calculus - Khan Academy</a></li>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://www.3blue1brown.com/lessons/multivariable-calculus" target="_blank">Multivariate Calculus - 3Blue1Brown</a></li>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://www.desmos.com/calculator" target="_blank">Interactive Graphing Tool - Desmos</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Probability and Statistics Section -->
+    <div class="section">
+        <h2 onclick="toggleSection(this)"><i class="fas fa-chart-bar"></i> Probability and Statistics</h2>
+        <div class="content">
+            <ul>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://www.khanacademy.org/math/probability" target="_blank">Probability Basics - Khan Academy</a></li>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://www.youtube.com/watch?v=4f3j7619iL0" target="_blank">Common Distributions - StatQuest</a></li>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://www.youtube.com/watch?v=64a8y5zW6iQ" target="_blank">Hypothesis Testing - StatQuest</a></li>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://www.youtube.com/watch?v=HZf48cNr9yY" target="_blank">Bayesian Inference - StatQuest</a></li>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://www.khanacademy.org/math/statistics-probability/describing-relationships-quantitative-data" target="_blank">Correlation and Covariance - Khan Academy</a></li>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://www.youtube.com/watch?v=RxN82qO-6Ro" target="_blank">Regression - StatQuest</a></li>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://seeing-theory.brown.edu/" target="_blank">Interactive Visual Guide - Seeing Theory</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Optimization Section -->
+    <div class="section">
+        <h2 onclick="toggleSection(this)"><i class="fas fa-tools"></i> Optimization</h2>
+        <div class="content">
+            <ul>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://uclaacm.github.io/gradient-descent-visualiser/" target="_blank">Gradient Descent Visualizer - UCLA ACM</a></li>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://github.com/lilipads/gradient_descent_viz" target="_blank">Interactive Gradient Descent Visualization</a></li>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://towardsdatascience.com/a-visual-explanation-of-gradient-descent-methods-momentum-adagrad-rmsprop-adam-f898b102325c" target="_blank">Gradient Descent Variants - Towards Data Science</a></li>
+                <li><i class="fas fa-arrow-right"></i> <a href="http://stanford.edu/class/ee364a/index.html" target="_blank">Convex Optimization - Stanford University</a></li>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://ocw.mit.edu/courses/18-901-introduction-to-optimization-fall-2005/index.htm" target="_blank">Non-linear Optimization - MIT OpenCourseWare</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Additional Topics Section -->
+    <div class="section">
+        <h2 onclick="toggleSection(this)"><i class="fas fa-brain"></i> Additional Topics</h2>
+        <div class="content">
+            <ul>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://www.3blue1brown.com/lessons/fourier-transforms" target="_blank">Fourier Transforms - 3Blue1Brown</a></li>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://www.khanacademy.org/computing/computer-science/informationtheory" target="_blank">Information Theory - Khan Academy</a></li>
+                <li><i class="fas fa-arrow-right"></i> <a href="https://www.khanacademy.org/computer-science/algorithms/graph-representation" target="_blank">Graph Theory - Khan Academy</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Created for 100k+ Students | Updated: March 07, 2025 | Powered by xAI
+    </footer>
+
+    <!-- JavaScript for Toggle Functionality -->
+    <script>
+        function toggleSection(header) {
+            const content = header.nextElementSibling;
+            content.classList.toggle('active');
+            const icon = header.querySelector('i');
+            icon.style.transform = content.classList.contains('active') ? 'rotate(90deg)' : 'rotate(0deg)';
+        }
+    </script>
+</body>
+</html>
